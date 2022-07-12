@@ -1,0 +1,24 @@
+.change-images {
+    display: flex;
+    width: 150px;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.change-images button {
+    padding: 5px 10px;
+    font-size: 18px;
+    border: none;
+    background-color: rgb(45, 45, 45);
+    color: white;
+    cursor: pointer;
+}
+
+.change-images button:hover {
+    background-color: rgb(26, 26, 26);
+}
+
+.change-images button:active {
+    background-color: rgb(0, 0, 0);
+}
