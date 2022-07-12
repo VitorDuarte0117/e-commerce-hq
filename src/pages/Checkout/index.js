@@ -139,7 +139,7 @@ export default function Checkout({ content }) {
                                     <TextField
                                         label="Validade do Cartão:"
                                         name="cardValidate"
-                                        type="date"
+                                        type="month"
                                         placeholder="CVV"
                                     />
                                     <TextField
