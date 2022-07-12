@@ -47,11 +47,13 @@ export default function Checkout({ content }) {
         nameCard: Yup.string().required(
             "Preencha o nome do titular do cartão!"
         ),
-        cardValidate: Yup.date().required("Campo obrigatório!"),
+        cardValidate: Yup.date().required(
+            "Preencha a data de validade do cartão de crédito!"
+        ),
         CVV: Yup.string()
             .min(3, "Este campo deve ter pelo menos 3 dígitos!")
             .max(3, "Este campo deve ter no máximo 3 digitos!")
-            .required("Campo obrigatório!"),
+            .required("Preencha o código de segurança do cartão de crédito!"),
     });
 
     const getMainScreen = () => {
