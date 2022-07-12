@@ -1,0 +1,128 @@
+.buy-container {
+    border-radius: 10px;
+    margin: 2rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 4px black;
+    background-color: rgb(255, 255, 255);
+}
+
+.expand-box {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.buy-container h2 {
+    font-size: 20px;
+    margin: 10px 0 30px 0;
+    color: rgb(48, 48, 48);
+}
+
+.upper-box {
+    width: 100%;
+    display: flex;
+}
+
+.upper-box img {
+    margin: 0 20px;
+}
+
+.buy-title {
+    margin-bottom: 1rem;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 80%;
+}
+
+.buy-price {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 5px;
+    margin-bottom: 10px;
+}
+
+.buy-price span {
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.buy-price .color {
+    text-decoration: none;
+    color: rgb(17, 172, 17);
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: auto;
+    margin-right: 10%;
+}
+
+.input-box div {
+    display: flex;
+    width: 100%;
+}
+
+.input-box input {
+    margin: 0 0 10px;
+    width: 60%;
+    height: 25px;
+    border: none;
+    background-color: rgb(236, 236, 236);
+    border-radius: 5px;
+    text-indent: 5px;
+}
+
+.confirm-btn {
+    margin: 10px 0;
+    border: none;
+    background-color: rgb(21, 151, 21);
+    padding: 7px 14px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.confirm-btn:hover {
+    background-color: rgb(19, 136, 19);
+}
+
+.confirm-btn:active {
+    background-color: rgb(14, 100, 14);
+}
+
+@media (max-width: 650px) {
+    .buy-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .buy-price {
+        font-size: 10px;
+        width: 46px;
+    }
+}
+
+@media (max-width: 650px) {
+    .buy-container {
+        width: 90%;
+    }
+    .input-box input {
+        margin: 0 0 10px;
+        width: 30rem;
+        height: 25px;
+        border: none;
+        background-color: rgb(236, 236, 236);
+        border-radius: 5px;
+        text-indent: 5px;
+    }
+}
