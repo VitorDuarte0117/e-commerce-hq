@@ -1,0 +1,143 @@
+.cover {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+}
+
+.modal {
+    position: absolute;
+    width: 35rem;
+    height: 290px;
+    background-color: white;
+}
+
+.modal-bar {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-bar button {
+    cursor: pointer;
+    position: absolute;
+    border: none;
+    background-color: white;
+    width: 33px;
+    height: 34px;
+    top: 0px;
+    right: 1px;
+    color: #000;
+    user-select: none;
+}
+.modal-bar button:hover {
+    cursor: pointer;
+    position: absolute;
+    border: none;
+    background-color: white;
+    width: 33px;
+    height: 34px;
+    top: 0px;
+    right: 1px;
+    color: red;
+    user-select: none;
+}
+
+.comic-box {
+    display: flex;
+}
+
+.text-box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+
+.comic-title {
+    width: 100%;
+    font-size: 14px;
+    padding: 5px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 10%;
+    margin-left: 4rem;
+}
+.comic-img {
+    width: 12rem;
+    height: 18.125rem;
+    object-fit: cover;
+}
+
+.creators {
+    width: 100%;
+    max-height: 100px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.creators p {
+    margin-left: 10%;
+}
+
+.creators p,
+.date,
+.info {
+    width: 80%;
+    font-size: 1rem;
+    color: rgb(29, 29, 29);
+    height: 3.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.description {
+    padding: 0 10px;
+    font-size: 14px;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 100px;
+}
+
+.price {
+    margin-right: 10px;
+}
+
+.bottom-box {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.date {
+    margin-bottom: 10px;
+}
+
+.buy-box {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 4.8rem;
+}
+
+@media (max-width: 480px) {
+    .modal {
+        width: 90%;
+    }
+    .modal-bar button {
+        right: 0;
+    }
+}

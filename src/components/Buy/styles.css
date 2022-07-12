@@ -1,0 +1,38 @@
+.buy-container {
+    border-radius: 10px;
+    margin: 30px 0;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 4px black;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.price {
+    margin-right: 10px;
+}
+.buy-box {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 4.8rem;
+}
+.confirm-btn {
+    margin: 10px 0;
+    border: none;
+    background-color: rgb(21, 151, 21);
+    padding: 7px 14px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.confirm-btn:hover {
+    background-color: rgb(19, 136, 19);
+}
+
+.confirm-btn:active {
+    background-color: rgb(14, 100, 14);
+}
